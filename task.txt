@@ -1,0 +1,54 @@
+package Lesson1;
+
+public class Main {
+    //EX1
+    public static void main(String[] args) {
+        byte b = 5;
+        short s = 490;
+        int i = 5300;
+        long l = 858585950L;
+        float f = 45.8629f;
+        char ch = 'r';
+        boolean boo = true;
+        String str = "EX1";
+        //EX2
+        calcEx2(b, s, i, l);
+        checkNumber(b,s);
+        positiveOrNegative(-5);
+        returnPosOrNeg(-9);
+        namePrint("Daniel");
+    }
+
+    public static float calcEx2(float a, float b, float c, float d) {
+        return a * (b + (c / d));
+    }
+
+
+    public static boolean checkNumber(int a, int b) {
+        if(a && b >= 10 && <= 20){
+            return true;
+        }else {
+            return  false;
+        }
+
+    }
+
+    public static void positiveOrNegative(int a){
+        if(a >= 0){
+            System.out.println("Число положительное");
+        }else{
+            System.out.println("Число отрицательное");
+        }
+    }
+    public static boolean returnPosOrNeg(int a){
+        if(a >= 0){
+          return true;
+        }else{
+            return false;
+        }
+    }
+    public static void namePrint(String name){
+        System.out.println("Привет, " + name + "!");
+    }
+    //8 Нет даже предположений как сделать. Простите :(
+}
